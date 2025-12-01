@@ -1,0 +1,40 @@
+.menu {
+  background-color: #e8f4e3;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu a {
+  display: block;
+  color: #3a5f0b;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #c0e1a5;
+  color: #ffffff;
+}
+
+.menu button {
+  background-color: #3a5f0b;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #2e4d02;
+}

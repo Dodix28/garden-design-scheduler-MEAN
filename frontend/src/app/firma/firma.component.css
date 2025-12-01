@@ -1,0 +1,58 @@
+mat-horizontal-stepper {
+  margin: 20px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+/*---------------------forma steps------------------------*/
+.stepsContainer{
+  width:70%;
+  height:auto;
+  margin-left: 200px;
+}
+.treciKorak strong{
+  margin-top:12px;
+}
+/*-------------------*/
+
+.informacije {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.informacije p {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.informacije .naziv {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #3A5F0B;
+}
+
+.informacije .adresa,
+.informacije .kontakt {
+  font-size: 1rem;
+}
+
+h3.informacije-titel {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  color: #3A5F0B;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.uploadButton{
+  margin-left: 15px;
+  padding:6px 23px;
+}

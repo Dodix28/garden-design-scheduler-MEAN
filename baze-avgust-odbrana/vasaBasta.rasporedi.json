@@ -1,0 +1,506 @@
+[{
+  "_id": {
+    "$oid": "66d9b9bda582dcc31aacec3e"
+  },
+  "idRaspored": 1,
+  "tipBaste": "privatna",
+  "zelenila": [
+    {
+      "id": 1,
+      "x": 50,
+      "y": 50,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 2,
+      "x": 50,
+      "y": 50,
+      "width": 50,
+      "height": 50
+    }
+  ],
+  "bazeni": [
+    {
+      "id": 1,
+      "x": 150,
+      "y": 100,
+      "width": 200,
+      "height": 100
+    }
+  ],
+  "stolovi": [
+    {
+      "id": 1,
+      "x": 300,
+      "y": 300,
+      "radius": 20
+    },
+    {
+      "id": 2,
+      "x": 400,
+      "y": 400,
+      "radius": 20
+    }
+  ],
+  "stolice": [
+    {
+      "id": 1,
+      "x": 500,
+      "y": 100,
+      "width": 40,
+      "height": 20
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d9b9bda582dcc31aacec3f"
+  },
+  "idRaspored": 2,
+  "tipBaste": "privatna",
+  "zelenila": [
+    {
+      "id": 1,
+      "x": 50,
+      "y": 50,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 2,
+      "x": 50,
+      "y": 50,
+      "width": 50,
+      "height": 50
+    }
+  ],
+  "bazeni": [
+    {
+      "id": 1,
+      "x": 150,
+      "y": 100,
+      "width": 200,
+      "height": 100
+    }
+  ],
+  "stolovi": [
+    {
+      "id": 1,
+      "x": 300,
+      "y": 300,
+      "radius": 20
+    },
+    {
+      "id": 2,
+      "x": 400,
+      "y": 400,
+      "radius": 20
+    }
+  ],
+  "stolice": [
+    {
+      "id": 1,
+      "x": 500,
+      "y": 100,
+      "width": 40,
+      "height": 20
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66d9b9bda582dcc31aacec40"
+  },
+  "idRaspored": 3,
+  "tipBaste": "restoran",
+  "zelenila": [
+    {
+      "id": 1,
+      "x": 50,
+      "y": 50,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 2,
+      "x": 50,
+      "y": 50,
+      "width": 50,
+      "height": 50
+    }
+  ],
+  "fontane": [
+    {
+      "id": 1,
+      "x": 50,
+      "y": 100,
+      "radius": 30
+    }
+  ],
+  "stolovi": [
+    {
+      "id": 1,
+      "x": 300,
+      "y": 300,
+      "radius": 20
+    },
+    {
+      "id": 2,
+      "x": 400,
+      "y": 400,
+      "radius": 20
+    }
+  ],
+  "stolice": [
+    {
+      "id": 1,
+      "x": 500,
+      "y": 100,
+      "width": 40,
+      "height": 20
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66dcb1ad88a05a5eb66ffbcb"
+  },
+  "idRaspored": 4,
+  "tipBaste": "privatna",
+  "zelenila": [
+    {
+      "id": 1,
+      "x": 10,
+      "y": 10,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 2,
+      "x": 10,
+      "y": 70,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 3,
+      "x": 10,
+      "y": 130,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 4,
+      "x": 10,
+      "y": 190,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 5,
+      "x": 10,
+      "y": 250,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 6,
+      "x": 10,
+      "y": 310,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 7,
+      "x": 10,
+      "y": 370,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 8,
+      "x": 10,
+      "y": 430,
+      "width": 50,
+      "height": 50
+    }
+  ],
+  "bazeni": [
+    {
+      "id": 1,
+      "x": 80,
+      "y": 80,
+      "width": 250,
+      "height": 190
+    }
+  ],
+  "stolovi": [
+    {
+      "id": 1,
+      "x": 400,
+      "y": 400,
+      "radius": 40
+    },
+    {
+      "id": 2,
+      "x": 400,
+      "y": 500,
+      "radius": 40
+    }
+  ],
+  "stolice": [
+    {
+      "id": 1,
+      "x": 100,
+      "y": 600,
+      "width": 40,
+      "height": 20
+    },
+    {
+      "id": 1,
+      "x": 200,
+      "y": 600,
+      "width": 40,
+      "height": 20
+    },
+    {
+      "id": 1,
+      "x": 300,
+      "y": 600,
+      "width": 40,
+      "height": 20
+    }
+  ],
+  "fontane": [
+    {}
+  ]
+},
+{
+  "_id": {
+    "$oid": "66dcb4bb88a05a5eb66ffc26"
+  },
+  "idRaspored": 5,
+  "tipBaste": "privatna",
+  "zelenila": [
+    {
+      "id": 1,
+      "x": 10,
+      "y": 10,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 2,
+      "x": 10,
+      "y": 70,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 3,
+      "x": 10,
+      "y": 130,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 4,
+      "x": 10,
+      "y": 190,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 5,
+      "x": 10,
+      "y": 250,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 6,
+      "x": 10,
+      "y": 310,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 7,
+      "x": 10,
+      "y": 370,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 8,
+      "x": 10,
+      "y": 430,
+      "width": 50,
+      "height": 50
+    }
+  ],
+  "bazeni": [
+    {
+      "id": 1,
+      "x": 80,
+      "y": 80,
+      "width": 250,
+      "height": 190
+    }
+  ],
+  "stolovi": [
+    {
+      "id": 1,
+      "x": 400,
+      "y": 400,
+      "radius": 40
+    },
+    {
+      "id": 2,
+      "x": 400,
+      "y": 500,
+      "radius": 40
+    }
+  ],
+  "stolice": [
+    {
+      "id": 1,
+      "x": 100,
+      "y": 600,
+      "width": 40,
+      "height": 20
+    },
+    {
+      "id": 1,
+      "x": 200,
+      "y": 600,
+      "width": 40,
+      "height": 20
+    },
+    {
+      "id": 1,
+      "x": 300,
+      "y": 600,
+      "width": 40,
+      "height": 20
+    }
+  ],
+  "fontane": [
+    {}
+  ]
+},
+{
+  "_id": {
+    "$oid": "66dd7eb29ec442271b0c59af"
+  },
+  "idRaspored": 6,
+  "tipBaste": "privatna",
+  "zelenila": [
+    {
+      "id": 1,
+      "x": 10,
+      "y": 10,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 2,
+      "x": 10,
+      "y": 70,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 3,
+      "x": 10,
+      "y": 130,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 4,
+      "x": 10,
+      "y": 190,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 5,
+      "x": 10,
+      "y": 250,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 6,
+      "x": 10,
+      "y": 310,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 7,
+      "x": 10,
+      "y": 370,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 8,
+      "x": 10,
+      "y": 430,
+      "width": 50,
+      "height": 50
+    }
+  ],
+  "bazeni": [
+    {
+      "id": 1,
+      "x": 80,
+      "y": 80,
+      "width": 250,
+      "height": 190
+    }
+  ],
+  "stolovi": [
+    {
+      "id": 1,
+      "x": 400,
+      "y": 400,
+      "radius": 40
+    },
+    {
+      "id": 2,
+      "x": 400,
+      "y": 500,
+      "radius": 40
+    }
+  ],
+  "stolice": [
+    {
+      "id": 1,
+      "x": 100,
+      "y": 600,
+      "width": 40,
+      "height": 20
+    },
+    {
+      "id": 1,
+      "x": 200,
+      "y": 600,
+      "width": 40,
+      "height": 20
+    },
+    {
+      "id": 1,
+      "x": 300,
+      "y": 600,
+      "width": 40,
+      "height": 20
+    }
+  ],
+  "fontane": [
+    {}
+  ]
+}]

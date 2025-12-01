@@ -1,0 +1,121 @@
+
+
+<div class="container">
+  <span class="naslov">MOJA BASTA - MOJA MASTA</span>
+  <div class="divNeregistrovani">
+    <h5>Info za neregistrovane korisnike</h5>
+    <table style = "max-width: 500px;">
+      <tr>
+        <th>Ukupan broj dekorisanih basta:</th>
+        <th>Ukupan broj registrovanih korisnika(vlasnika):</th>
+        <th>Ukupan broj registrovanih korisnika(dekoratera):</th>
+        <th>Broj zakazanih poslova u proteklih 24h:</th>
+        <th>Broj zakazanih poslova u proteklih 7 dana:</th>
+        <th>Broj zakazanih poslova u proteklih 30 dana:</th>
+      </tr>
+      <tr>
+        <td>{{zavrseniPoslovi.length}}</td>
+        <td>{{this.sviVlasnici.length}}</td>
+        <td>{{this.sviDekorateri.length}}</td>
+        <td>{{this.h24br}}</td>
+        <td>{{this.sedambr}}</td>
+        <td>{{this.mesecbr}}</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+  <div class="tabelaFirmi">
+    <div class="pretraga">
+      <input type="text" placeholder="Pretraži restorane" [(ngModel)]="pretraga">
+      <button (click)="pretrazi()">Pretraži</button> <br/>
+      <button (click)="prikaziSve()">Prikazi sve </button>
+    </div>
+
+    <div class="tabelaDiv">
+    <table>
+      <tr>
+        <th>Naziv</th>
+        <th>Adresa</th>
+        <th>Dekorateri</th>
+      </tr>
+      <tr *ngFor="let f of prikazaneFirme">
+        <td>{{f.naziv}}</td>
+        <td>{{f.adresa}}</td>
+        <td>
+          <ul>
+            <li *ngFor="let dekorater of f.dekorateri">{{dekorater.ime}} {{dekorater.prezime}}</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    </div>
+
+    <div class="soriranje">
+      <select [(ngModel)]="sortOption">
+        <option value="nazivRastuce">Sortiraj po nazivu rastuće</option>
+        <option value="nazivOpadajuce">Sortiraj po nazivu opadajuće</option>
+
+        <option value="adresaRastuce">Sortiraj po adresi rastuće</option>
+        <option value="adresaOpadajuce">Sortiraj po adresi opadajuće</option>
+      </select>
+      <button (click)=" sortiraj()">Sortiraj</button>
+      <br/>
+      <span class="greska">{{porukaGreske}}</span>
+    </div>
+
+  <div>
+
+
+
+
+  <hr/>
+
+  <div class="podaciContainer">
+    <div class="login">
+      <h5>Ulogujte se (vlasnik i dekorater)</h5>
+        Korisnicko ime: <input type="text" name="username" [(ngModel)]="kor_ime"><br/>
+        Lozinka: <input type="password" name="password" [(ngModel)]="lozinka"><br/>
+        <button (click)="login()">Uloguj se</button>
+      <span class="greska">{{porukaLogin}}</span>
+    </div>
+
+    <div class="registracija">
+      <h5>Registrujte se (vlasnici-kuce/restorana)</h5>
+      <div class="podatak">Korisnicko ime: <input type="text" name="kor_ime_reg" [(ngModel)]="kor_ime_reg"><br/></div>
+      <div class="podatak">Lozinka: <input type="password" name="lozinka_reg" [(ngModel)]="lozinka_reg"></div>
+      <div class="podatak">Ime: <input type="text" name="ime_reg" [(ngModel)]="ime_reg"></div>
+      <div class="podatak">Prezime: <input type="text" name="prezime_reg" [(ngModel)]="prezime_reg"></div>
+      <div class="podatak">Pol:
+        <select [(ngModel)]="pol_reg" name="pol_reg">
+          <option value="M"> M </option>
+          <option value="Z"> Z </option>
+        </select></div>
+      <div class="podatak">Adresa: <input type="text" name="adresa_reg" [(ngModel)]="adresa_reg"></div>
+      <div class="podatak">Kontakt telefon: <input type="text" name="kontakt_reg" [(ngModel)]="kontakt_reg"></div>
+      <div class="podatak">Email: <input type="text" name="mejl_reg" placeholder="nesto@primer.com" [(ngModel)]="mejl_reg"></div>
+      <div class="podatak">Kreditna kartica: <input type="text" name="kartica_reg" placeholder="Unesite broj kartice" (input)="cardImage()" [(ngModel)]="kartica_reg">
+        <img *ngIf="cardType === 'Diners'" src="assets/dinersCard.png" alt="Diners Card Icon" class="card-icon">
+          <img *ngIf="cardType === 'MasterCard'" src="assets/masterCard.png" alt="MasterCard Icon" class="card-icon">
+          <img *ngIf="cardType === 'Visa'" src="assets/visaCard.png" alt="Visa Card Icon" class="card-icon"></div>
+      <div class="podatak">Profinla fotografija: <input type="file" id="image" (change)="selectFile($event)" name="image"  accept=".png, .jpg"></div>
+      <button (click)="registracija()">Registruj se</button><br/>
+
+      <span class='greska'>{{porukaReg}}</span> <br/>
+      <span class='greska'>{{porukaLozinka}}</span> <br/>
+      <span class='greska'>{{porukaMejl}}</span> <br/>
+      <span class='greska'>{{porukaKontakt}}</span> <br/>
+      <span class='greska'>{{porukaKartica}}</span> <br/>
+    </div>
+
+
+
+    <div class="changePassword">
+      <h5>Zaboravili ste lozinku?</h5>
+      <button (click)="changePassword()">Promeni lozinku</button>
+    </div>
+
+  </div>
+</div>

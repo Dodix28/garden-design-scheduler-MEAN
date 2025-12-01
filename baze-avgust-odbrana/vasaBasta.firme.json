@@ -1,0 +1,198 @@
+[{
+  "_id": {
+    "$oid": "66db15e3a582dcc31aacec50"
+  },
+  "idF": 1,
+  "naziv": "Agacija",
+  "adresa": "Zvezdara",
+  "kontakt": "0656234480",
+  "usluge": [
+    {
+      "naziv": "kopanje",
+      "cena": 300
+    },
+    {
+      "naziv": "sadjenje",
+      "cena": 200
+    },
+    {
+      "naziv": "vadjenje",
+      "cena": 100
+    }
+  ],
+  "dekorateri": [
+    {
+      "kor_ime": "ana",
+      "ime": "Ana",
+      "prezime": "Ankovic"
+    },
+    {
+      "kor_ime": "radnik1",
+      "ime": "Radnik1",
+      "prezime": "Radnik1"
+    },
+    {
+      "kor_ime": "ranik2",
+      "ime": "Radnik2",
+      "prezime": "Radnik2"
+    },
+    {
+      "kor_ime": "radnik3",
+      "ime": "Radnik3",
+      "prezime": "Radnik3"
+    }
+  ],
+  "lokacija": {
+    "latituda": {
+      "$numberDecimal": "45"
+    },
+    "longituda": {
+      "$numberDecimal": "234"
+    }
+  },
+  "godisnji_odmor": {
+    "pocetak": "2024-09-01",
+    "kraj": "2024-09-14"
+  }
+},
+{
+  "_id": {
+    "$oid": "66db15e3a582dcc31aacec51"
+  },
+  "idF": 2,
+  "naziv": "Vitorog",
+  "adresa": "Zvezdara",
+  "kontakt": "0656234480",
+  "usluge": [
+    {
+      "naziv": "kopanje",
+      "cena": 300
+    },
+    {
+      "naziv": "sadjenje",
+      "cena": 200
+    },
+    {
+      "naziv": "vadjenje",
+      "cena": 100
+    }
+  ],
+  "dekorateri": [
+    {
+      "kor_ime": "jole",
+      "ime": "Jovanica",
+      "prezime": "Stanojkovic"
+    },
+    {
+      "kor_ime": "radnik4",
+      "ime": "Radnik4",
+      "prezime": "Radnik4"
+    }
+  ],
+  "lokacija": {
+    "latituda": {
+      "$numberDecimal": "25"
+    },
+    "longituda": {
+      "$numberDecimal": "255"
+    }
+  },
+  "godisnji_odmor": {
+    "pocetak": "2024-05-05",
+    "kraj": "2024-05-09"
+  }
+},
+{
+  "_id": {
+    "$oid": "66db15e3a582dcc31aacec53"
+  },
+  "idF": 4,
+  "naziv": "Yisk",
+  "adresa": "Zvezdara",
+  "kontakt": "0656234480",
+  "usluge": [
+    {
+      "naziv": "kopanje",
+      "cena": 300
+    },
+    {
+      "naziv": "sadjenje",
+      "cena": 200
+    },
+    {
+      "naziv": "vadjenje",
+      "cena": 100
+    }
+  ],
+  "dekorateri": [
+    {
+      "kor_ime": "micun",
+      "ime": "Miljan",
+      "prezime": "Doderovic"
+    },
+    {
+      "kor_ime": "radnik5",
+      "ime": "Radnik5",
+      "prezime": "Radnik5"
+    }
+  ],
+  "lokacija": {
+    "latituda": {
+      "$numberDecimal": "223"
+    },
+    "longituda": {
+      "$numberDecimal": "12233"
+    }
+  },
+  "godisnji_odmor": {
+    "pocetak": "2024-05-17",
+    "kraj": "2024-05-25"
+  }
+},
+{
+  "_id": {
+    "$oid": "66db15e3a582dcc31aacec54"
+  },
+  "idF": 5,
+  "naziv": "Firmica",
+  "adresa": "Zvezdara",
+  "kontakt": "0656234480",
+  "usluge": [
+    {
+      "naziv": "kopanje",
+      "cena": 300
+    },
+    {
+      "naziv": "sadjenje",
+      "cena": 200
+    },
+    {
+      "naziv": "vadjenje",
+      "cena": 100
+    }
+  ],
+  "dekorateri": [
+    {
+      "kor_ime": "pera",
+      "ime": "Petar",
+      "prezime": "Petrovic"
+    },
+    {
+      "kor_ime": "radnik6",
+      "ime": "Radnik6",
+      "prezime": "Radnik6"
+    }
+  ],
+  "lokacija": {
+    "latituda": {
+      "$numberDecimal": "955"
+    },
+    "longituda": {
+      "$numberDecimal": "96"
+    }
+  },
+  "godisnji_odmor": {
+    "pocetak": "2024-05-05",
+    "kraj": "2024-05-15"
+  }
+}]

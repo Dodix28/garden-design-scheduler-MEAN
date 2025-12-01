@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "66db4e5ca582dcc31aacec61"
+  },
+  "idO": 1,
+  "status": "na cekanju",
+  "datumZavrsetka": "2024-10-09",
+  "vremeZavrsetka": "09:24",
+  "idZ": 4,
+  "idF": 1,
+  "dekorater": ""
+},
+{
+  "_id": {
+    "$oid": "66db4e5ca582dcc31aacec62"
+  },
+  "idO": 2,
+  "status": "na cekanju",
+  "datumZavrsetka": "2024-09-03",
+  "vremeZavrsetka": "10:17",
+  "idZ": 2,
+  "idF": 1,
+  "dekorater": ""
+},
+{
+  "_id": {
+    "$oid": "66db4e5ca582dcc31aacec63"
+  },
+  "idO": 3,
+  "status": "na cekanju",
+  "datumZavrsetka": "",
+  "vremeZavrsetka": "",
+  "idZ": 3,
+  "idF": 1,
+  "dekorater": ""
+},
+{
+  "_id": {
+    "$oid": "66db4e5ca582dcc31aacec64"
+  },
+  "idO": 4,
+  "status": "na cekanju",
+  "datumZavrsetka": "",
+  "vremeZavrsetka": "",
+  "idZ": 4,
+  "idF": 1,
+  "dekorater": ""
+},
+{
+  "_id": {
+    "$oid": "66db4e5ca582dcc31aacec65"
+  },
+  "idO": 5,
+  "status": "na cekanju",
+  "datumZavrsetka": "",
+  "vremeZavrsetka": "",
+  "idZ": 1,
+  "idF": 1,
+  "dekorater": ""
+},
+{
+  "_id": {
+    "$oid": "66dd6d232ca6d79059aa1a45"
+  },
+  "idO": 6,
+  "status": "na cekanju",
+  "datumZavrsetka": "",
+  "vremeZavrsetka": "",
+  "idZ": 1,
+  "idF": 1,
+  "dekorater": ""
+}]

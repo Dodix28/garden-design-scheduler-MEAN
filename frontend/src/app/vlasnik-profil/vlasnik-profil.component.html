@@ -1,0 +1,69 @@
+<h5>Moj profil</h5>
+<table>
+  <tr>
+    <td><b>Ime :</b></td>
+    <td>{{ulogovan.ime}}</td>
+  </tr>
+
+  <tr>
+    <td><b>Prezime :</b></td>
+    <td>{{ulogovan.prezime}}</td>
+  </tr>
+
+  <tr>
+    <td><b>Mejl :</b></td>
+    <td>{{ulogovan.mejl}}</td>
+  </tr>
+
+  <tr>
+    <td><b>Kontakt :</b></td>
+    <td>{{ulogovan.kontakt}}</td>
+  </tr>
+
+  <tr>
+    <td><b>Adresa :</b></td>
+    <td>{{ulogovan.adresa}}</td>
+  </tr>
+
+  <tr *ngIf="ulogovan.tip == 'vlasnik'">
+    <td><b>Broj kartice :</b></td>
+    <td>{{ulogovan.brKartice}}</td>
+   </tr>
+
+  <tr>
+    <td><b>Profilna slika :</b></td>
+    <td>
+      <div>
+        <img [src]="profilImageURL" height="300px" width="300px" alt="Opis slike">
+      </div>
+    </td>
+  </tr>
+</table>
+<button (click)="toggleAzuriranjePodataka()" style="margin-top: 10px;">Azuriraj podatke</button>
+<hr/>
+
+<div *ngIf='prikaziFormuZaAzuriranje'>
+  <b>Azurirajte svoje podatke: </b>
+
+  <div class="azuriranje">
+      Ime:  <input type='text' name='ime' [(ngModel)]='ime'> <br/>
+      Prezime:  <input type='text' name='prezime' [(ngModel)]='prezime'> <br/>
+      Mejl:  <input type='text' name='mejl' [(ngModel)]='mejl'> <br/>
+      Adresa:  <input type='text' name='adresa' [(ngModel)]='adresa'> <br/>
+      Kontakt telefon:  <input type='text' name='kontakt' [(ngModel)]='kontakt'> <br/>
+      <div *ngIf="ulogovan.tip == 'vlasnik'">
+        Broj Kreditne kartice:  <input type='text' name='kartica' [(ngModel)]='kartica' placeholder="Unesite broj kartice" (input)="cardImage()">
+        <img *ngIf="cardType === 'Diners'" src="assets/dinersCard.png" alt="Diners Card Icon" class="card-icon">
+        <img *ngIf="cardType === 'MasterCard'" src="assets/masterCard.png" alt="MasterCard Icon" class="card-icon">
+        <img *ngIf="cardType === 'Visa'" src="assets/visaCard.png" alt="Visa Card Icon" class="card-icon">
+      </div>
+      <br/>
+      Profinla fotografija: <input type="file" id="image" (change)="selectFile($event)" name="image"  accept=".png, .jpg"> <br/>
+      <button (click)="azuriraj()">Azuriraj</button>
+    </div>
+    <span class="greska">{{porukaFormatMejl}}</span><br/>
+    <span class="greska">{{porukaFormatKontakt}}</span> <br/>
+    <span class="greska">{{porukaFormatKartica}}</span> <br/>
+    <span class="greska">{{porukaAzuriranja}}</span> <br/>
+  </div>
+

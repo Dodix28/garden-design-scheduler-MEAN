@@ -1,0 +1,70 @@
+.card-icon{
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+h5
+{
+  text-align: left;
+}
+
+
+.azuriranje {
+  background-color: rgba(245, 245, 245, 0.9); 
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-left: 20px;
+}
+
+.azuriranje input[type="text"] {
+  width: calc(100% - 20px); 
+  padding: 10px;
+  height: 30px;
+  font-size: 1rem;
+  border: 1px solid #ddd; 
+  border-radius: 4px;
+  margin-bottom: 15px; 
+  box-sizing: border-box; 
+}
+
+.azuriranje input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.azuriranje button {
+  background-color: #3a5f0b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.azuriranje button:hover {
+  background-color: #2e4d02;
+}
+
+.azuriranje .card-icon {
+  width: 30px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.greska {
+  color: #d9534f;
+  font-size: 0.875rem; 
+}

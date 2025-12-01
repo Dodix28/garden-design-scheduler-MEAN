@@ -1,0 +1,35 @@
+<h5>Neobradjena zakazivanja za firmu {{firma.naziv}}</h5>
+<table>
+  <tr>
+    <th>Datum zakazivanja</th>
+    <th>Vreme zakazivanja</th>
+    <th>Kvadratura baste</th>
+    <th>Tip baste</th>
+    <th>Usluge</th>
+    <th>Status</th>
+    <th>Odbij</th>
+    <th>Potvrdi</th>
+  </tr>
+  <tr *ngFor="let z of zakazivanjaNaCekanju">
+    <td>{{z.datumZakazivanja}}</td>
+    <td>{{z.vreme}}</td>
+    <td>{{z.kvadraturaBaste}}</td>
+    <td>{{z.tipBaste}}</td>
+    <td>
+      <ul>
+        <li *ngFor="let u of z.usluge">{{u.naziv}}</li>
+      </ul>
+    </td>
+    <td>{{z.status}}</td>
+    <td>
+      <button (click)="potvrdiTermin(z.idZ)">Potvrdi</button>
+    </td>
+    <td>
+      <div class="odbijTermin">
+        <textarea name="komentar" placeholder="unesite komentar!"[(ngModel)]="z.komentar" ></textarea>
+        <button (click)="odbijTermin(z)">Odbij</button>
+      </div>
+    </td>
+  </tr>
+</table>
+<span class="greska">{{poruka}}</span>

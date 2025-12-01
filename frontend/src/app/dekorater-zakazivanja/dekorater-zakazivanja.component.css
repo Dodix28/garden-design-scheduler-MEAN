@@ -1,0 +1,12 @@
+.greska {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+.odbijTermin{
+  display:flex;
+  flex-direction: row;
+}

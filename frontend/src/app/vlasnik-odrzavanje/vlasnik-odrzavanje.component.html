@@ -1,0 +1,46 @@
+<h5>Zavrseni poslovi</h5>
+
+<table *ngIf="zavrsenaZakazivanja && zavrsenaZakazivanja.length > 0">
+  <tr>
+    <th>ID posla</th>
+    <th>Datum zavrsetka</th>
+    <th>Tip baste</th>
+    <th>Kvadratura</th>
+    <th>Broj objekata</th>
+    <th>Zakazivanje servisa</th>
+  </tr>
+  <tr *ngFor="let z of zavrsenaZakazivanja">
+    <td>{{z.idZ}}</td>
+    <td>{{z.datumZavrsetka}}</td>
+    <td>{{z.tipBaste}}</td>
+    <td *ngIf="z.tipBaste === 'privatna' ">{{z.kvBazen}} m2</td>
+    <td *ngIf="z.tipBaste === 'restoran' ">{{z.kvFontana}} m2</td>
+    <td *ngIf="z.tipBaste === 'privatna' ">{{z.brBazena}} </td>
+    <td *ngIf="z.tipBaste === 'restoran' ">{{z.brFontana}} </td>
+    <td>
+      <button (click)="zakazi(z.idZ,z.idF)" *ngIf="isThreeDaysPassed(z.datumZavrsetka) && vecZakazao(z.idZ) && poslednjeOdrzavanje(z.idZ)">Zakazi</button>
+    </td>
+
+  </tr>
+</table>
+
+
+<h5>Poslovi cije su vodene povrsine u procesu </h5>
+<table >
+  <tr>
+    <th>ID posla</th>
+    <th>Tip baste</th>
+    <th>Kvadratura</th>
+    <th>Broj objekata</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let o of prihvacenaInaCekanju">
+    <td>{{o.idZ}}</td>
+    <td>{{o.tipBaste}}</td>
+    <td *ngIf="o.tipBaste === 'privatna' ">{{o.kvBazen}} m2</td>
+    <td *ngIf="o.tipBaste === 'restoran' ">{{o.kvFontana}} m2</td>
+    <td *ngIf="o.tipBaste === 'privatna' ">{{o.brBazena}} </td>
+    <td *ngIf="o.tipBaste === 'restoran' ">{{o.brFontana}} </td>
+    <td>{{o.status}}</td>
+  </tr>
+</table>

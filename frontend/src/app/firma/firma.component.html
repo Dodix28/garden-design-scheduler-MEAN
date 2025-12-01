@@ -1,0 +1,167 @@
+<h3 class="informacije-titel">Informacije o odabranoj firmi: </h3>
+<!--Naziv: {{selectedFirm.naziv}} <br/>
+Adresa: {{selectedFirm.adresa}} <br/>
+Kontakt: {{selectedFirm.kontakt}} <br/>-->
+
+<div class="informacije">
+  <p class="naziv">Naziv: {{selectedFirm.naziv}}</p>
+  <p class="adresa">Adresa: {{selectedFirm.adresa}}</p>
+  <p class="kontakt">Kontakt: {{selectedFirm.kontakt}}</p>
+</div>
+
+<h5>Cenovnik usluga</h5>
+<table>
+  <tr>
+    <th>Naziv</th>
+    <th>Cena</th>
+  </tr>
+  <tr *ngFor="let u of selectedFirm.usluge">
+    <td> {{u.naziv}}</td>
+    <td>{{u.cena}} rsd</td>
+  </tr>
+</table>
+
+
+<h5>Zakazite uredjivanje svoje baste</h5>
+
+<div class="stepsContainer">
+  <mat-horizontal-stepper [linear]="true" #stepper>
+    <!--KORAK 1: datum , vreme, kvadratura, tip baste -->
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Unos osnovnih podataka</ng-template>
+
+        <mat-form-field>
+          <mat-label>Odaberite datum</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="datum">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Odaberite vreme</mat-label>
+          <input matInput formControlName="vreme" type="time">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Ukupna kvadratura baste</mat-label>
+          <input matInput formControlName="kvadratura" type="number" placeholder="Unesite kvadraturu">
+        </mat-form-field>
+
+        <mat-radio-group formControlName="tipBaste">
+          <mat-radio-button value="privatna">Privatna basta</mat-radio-button>
+          <mat-radio-button value="restoran">Basta restorana</mat-radio-button>
+        </mat-radio-group>
+
+        <div>
+          <button mat-button matStepperNext>Sledeci korak</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <!-- KORAK 2: DETALJI U ZAVISNOSTI OD TIPA BASTE -->
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Unos detalja baste</ng-template>
+
+        <div *ngIf="firstFormGroup.controls['tipBaste'].value === 'privatna'">
+          <mat-form-field>
+            <mat-label>Kvadratura pod bazenom</mat-label>
+            <input matInput formControlName="bazeni" type="number">
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Kvadratura pod zelenilom</mat-label>
+            <input matInput formControlName="zelenilo" type="number">
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Kvadratura pod lezaljkama i stolovima</mat-label>
+            <input matInput formControlName="lezaljkeStolovi" type="number">
+          </mat-form-field>
+        </div>
+
+        <div *ngIf="firstFormGroup.controls['tipBaste'].value === 'restoran'">
+          <mat-form-field>
+            <mat-label>Kvadratura pod fontanom</mat-label>
+            <input matInput formControlName="fontane" type="number">
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Kvadratura pod zelenilom</mat-label>
+            <input matInput formControlName="zeleniloRestoran" type="number">
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Broj stolova</mat-label>
+            <input matInput formControlName="stolovi" type="number">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Broj stolica</mat-label>
+            <input matInput formControlName="stolice" type="number">
+          </mat-form-field>
+        </div>
+        <div>
+          <input type="file" (change)="onFileSelected($event)">
+          <!--<button (click)="onUpload()" [disabled]="!uploadEnabled" class="uploadButton">Upload</button>-->
+        </div>
+        <span class="greska">{{porukaGreske}}</span>
+
+
+        <mat-form-field>
+          <mat-label>Dodatni zahtevi</mat-label>
+          <textarea matInput formControlName="opis"></textarea>
+        </mat-form-field>
+
+        <mat-checkbox *ngFor="let usluga of selectedFirm.usluge"
+        [checked]="usluga.selected"
+        (change)="toggleUslugaSelection(usluga)">
+        {{ usluga.naziv }}
+          </mat-checkbox>
+
+        <div>
+          <button mat-button matStepperPrevious>Prethodni korak</button>
+          <button mat-button matStepperNext>Sledeci korak</button>
+        </div>
+      </form>
+
+      <ng-template #successMessage>
+        <div class="successMessage">
+          <h3>Uspešno ste zakazali termin!</h3>
+          <p>Vaš termin je uspešno potvrđen.</p>
+          <button mat-button (click)="resetStepper()">Zakazite ponovo</button>
+        </div>
+      </ng-template>
+    </mat-step>
+
+    <!--KORAK 3 : pregled i potvrda -->
+    <mat-step>
+      <ng-template matStepLabel>Pregled i potvrda</ng-template>
+      <p>Proverite uneto i potvrdite zakazivanje.</p>
+
+      <!--Prikaz unetih podataka  -->
+      <div class="treciKorak">
+        <strong>Datum i vreme:</strong> {{ firstFormGroup.controls['datum'].value | date }} {{ firstFormGroup.controls['vreme'].value }}<br>
+        <strong>Тip baste:</strong> {{ firstFormGroup.controls['tipBaste'].value }}<br>
+        <strong>Kvadratura:</strong> {{ firstFormGroup.controls['kvadratura'].value }} m²<br>
+        <!-- Dodajte dodatne podatke -->
+      </div>
+
+      <div>
+        <button mat-button matStepperPrevious>Prethodni korak</button>
+        <button mat-button (click)="onSubmit()">Potvrdi</button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>
+
+
+
+
+
+<h5 *ngIf="prikaziCanvas ===true">Raspored za bastu:</h5>
+<div style="width: 800px; height: 500px; border:1px solid black;" *ngIf="prikaziCanvas ===true">
+
+  <app-canvas [data]="canvasData"></app-canvas>
+</div>
+

@@ -1,0 +1,21 @@
+npm install --save-dev @types/multer
+npm install express multer
+npm install bcrypt
+
+
+
+front:
+
+npm install chart.js
+npm install chart.js express
+npm install bootstrap
+ng add @angular/material
+npm install @types/google.maps
+npm install @types/google.maps --save
+npm install --save @types/googlemaps
+npm install leaflet
+npm install --save-dev @types/leaflet
+
+
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async 

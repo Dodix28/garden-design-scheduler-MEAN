@@ -1,0 +1,301 @@
+[{
+  "_id": {
+    "$oid": "668a58eaeb2b98dd37125cae"
+  },
+  "idZ": 1,
+  "ime": "Lazar",
+  "prezime": "Lazarevic",
+  "kor_ime": "laza",
+  "lozinka": "laza123",
+  "tip": "gost",
+  "mejl": "laza@mail.com",
+  "pol": "M",
+  "adresa": "Zvezdara",
+  "kontakt": "0656234480",
+  "brKartice": "06562344805645",
+  "profilna": "default.jpg",
+  "status": "prihvaceno"
+},
+{
+  "_id": {
+    "$oid": "668a58eaeb2b98dd37125caf"
+  },
+  "idZ": 2,
+  "ime": "Maza",
+  "prezime": "Mazarevic",
+  "kor_ime": "maza",
+  "lozinka": "maza123",
+  "tip": "gost",
+  "mejl": "maza@mail.com",
+  "pol": "Z",
+  "adresa": "Dorcol",
+  "kontakt": "0656234480",
+  "brKartice": "841005622300",
+  "profilna": "default.jpg",
+  "status": "odbijeno"
+},
+{
+  "_id": {
+    "$oid": "668a58eaeb2b98dd37125cb0"
+  },
+  "idZ": 3,
+  "ime": "Boza",
+  "prezime": "Bozic",
+  "kor_ime": "boza",
+  "lozinka": "boza123",
+  "tip": "gost",
+  "mejl": "boza@mail.com",
+  "pol": "M",
+  "adresa": "Zvezdara 3",
+  "kontakt": "0656234480",
+  "brKartice": "841005622300",
+  "profilna": "default.jpg",
+  "status": "prihvaceno"
+},
+{
+  "_id": {
+    "$oid": "668a60c0cf8339486bff955e"
+  },
+  "ime": "Zahtev1",
+  "prezime": "Zahtev1",
+  "kor_ime": "zahtev1",
+  "lozinka": "Zahtev1!",
+  "mejl": "zahtev1@gmail.com",
+  "tip": "gost",
+  "pol": "Z",
+  "adresa": "Diznilend",
+  "kontakt": "0656234480",
+  "brKartice": "1234567891234569",
+  "profilna": "default.jpg",
+  "status": "na cekanju",
+  "idZ": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668a81a58628c992f6b2dc89"
+  },
+  "ime": "Zahtev2",
+  "prezime": "Zahtev2",
+  "kor_ime": "zahtev2",
+  "lozinka": "Zahtev2!",
+  "mejl": "zahtev2@gmail.com",
+  "tip": "gost",
+  "pol": "M",
+  "adresa": "Mirijevo",
+  "kontakt": "062475575",
+  "brKartice": "1234567891234569",
+  "profilna": "default.jpg",
+  "status": "na cekanju",
+  "idZ": 5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668a81bc8628c992f6b2dc90"
+  },
+  "ime": "Zahtev3",
+  "prezime": "Zahtev3",
+  "kor_ime": "zahtev3",
+  "lozinka": "Zahtev2!",
+  "mejl": "zahtev3@gmail.com",
+  "tip": "gost",
+  "pol": "M",
+  "adresa": "Mirijevo",
+  "kontakt": "062475575",
+  "brKartice": "1234567891234569",
+  "profilna": "default.jpg",
+  "status": "odbijeno",
+  "idZ": 6,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668a81ce8628c992f6b2dc97"
+  },
+  "ime": "Zahtev4",
+  "prezime": "Zahtev4",
+  "kor_ime": "zahtev4",
+  "lozinka": "Zahtev2!",
+  "mejl": "zahtev4@gmail.com",
+  "tip": "gost",
+  "pol": "M",
+  "adresa": "Mirijevo",
+  "kontakt": "062475575",
+  "brKartice": "1234567891234569",
+  "profilna": "default.jpg",
+  "status": "odbijeno",
+  "idZ": 7,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b4ac4aa32092b1d53d80f5"
+  },
+  "ime": "Cica",
+  "prezime": "Cicic",
+  "kor_ime": "lazarica",
+  "lozinka": "Cicika123!",
+  "mejl": "cica@gmail.com",
+  "tip": "gost",
+  "pol": "M",
+  "adresa": "Zvezdra",
+  "kontakt": "0656234480",
+  "brKartice": "1234567891234569",
+  "profilna": "default.jpg",
+  "status": "odbijeno",
+  "idZ": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d82f306fe3e1deb27ac4da"
+  },
+  "idZ": 9,
+  "ime": "milica",
+  "prezime": "mica",
+  "kor_ime": "dodli",
+  "lozinka": "Mica123!",
+  "mejl": "dodili@gmail.com",
+  "tip": "gost",
+  "pol": "M",
+  "adresa": "aleksandra belica ",
+  "kontakt": "0656234880",
+  "brKartice": "4556123456789456",
+  "profilna": "default.jpg",
+  "status": "na cekanju",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d82f786fe3e1deb27ac4e1"
+  },
+  "idZ": 10,
+  "ime": "milica",
+  "prezime": "mica",
+  "kor_ime": "Milicica",
+  "lozinka": "Mica123!",
+  "mejl": "dodilicc@gmail.com",
+  "tip": "gost",
+  "pol": "M",
+  "adresa": "aleksandra belica ",
+  "kontakt": "0656234880",
+  "brKartice": "4556123456789456",
+  "profilna": "emoji1.jpg",
+  "status": "prihvaceno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d83c8c2ac3d064a0917d24"
+  },
+  "idZ": 11,
+  "ime": "Jaca",
+  "prezime": "Jaca",
+  "kor_ime": "jaca",
+  "lozinka": "Jaca123!",
+  "mejl": "jaca@gmail.com",
+  "tip": "gost",
+  "pol": "Z",
+  "adresa": "aleksandra belica ",
+  "kontakt": "0656234880",
+  "brKartice": "4556123456789456",
+  "profilna": "COM_0784.JPG",
+  "status": "prihvaceno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d83d4d2ac3d064a0917d2e"
+  },
+  "idZ": 12,
+  "ime": "jacal",
+  "prezime": "jaca",
+  "kor_ime": "jacal",
+  "lozinka": "Jaca123!",
+  "mejl": "lala@gmail.com",
+  "tip": "gost",
+  "pol": "Z",
+  "adresa": "aleksandarbelic",
+  "kontakt": "0656234480",
+  "brKartice": "4556123456789456",
+  "profilna": "HD-wallpaper-pink-dark-pink-abstract-pink.jpg",
+  "status": "na cekanju",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d8428c2ac3d064a0917d3a"
+  },
+  "idZ": 13,
+  "ime": "abc",
+  "prezime": "abc",
+  "kor_ime": "abc",
+  "lozinka": "Aabc123!",
+  "mejl": "abc@gmail.com",
+  "tip": "gost",
+  "pol": "M",
+  "adresa": "aaa",
+  "kontakt": "0656234880",
+  "brKartice": "4556123456789456",
+  "profilna": "profilna.jpg",
+  "status": "prihvaceno",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d844192ac3d064a0917d46"
+  },
+  "idZ": 14,
+  "ime": "limena",
+  "prezime": "limena",
+  "kor_ime": "limenka",
+  "lozinka": "Limen123!",
+  "mejl": "limena@gmail.com",
+  "tip": "gost",
+  "pol": "M",
+  "adresa": "aaa",
+  "kontakt": "0656234880",
+  "brKartice": "4556123456789456",
+  "profilna": "profilna.jpg",
+  "status": "na cekanju",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d844782ac3d064a0917d4e"
+  },
+  "idZ": 15,
+  "ime": "Spaj",
+  "prezime": "Spaj",
+  "kor_ime": "spajalica",
+  "lozinka": "Spaj123!",
+  "mejl": "spaj@gmail.com",
+  "tip": "gost",
+  "pol": "M",
+  "adresa": "aaa",
+  "kontakt": "0656234880",
+  "brKartice": "4556123456789456",
+  "profilna": "default.png",
+  "status": "na cekanju",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db77031a37c02fcb9b1f4e"
+  },
+  "idZ": 16,
+  "ime": "jaca",
+  "prezime": "jacic",
+  "kor_ime": "meca",
+  "lozinka": "Leca123!",
+  "mejl": "dod@gmail.com",
+  "tip": "vlasnik",
+  "pol": "M",
+  "adresa": "adssd",
+  "kontakt": "0656234480",
+  "brKartice": "300123123123123",
+  "profilna": "GoodFeeling_gruen-200x200px-4.jpg",
+  "status": "prihvaceno",
+  "__v": 0
+}]

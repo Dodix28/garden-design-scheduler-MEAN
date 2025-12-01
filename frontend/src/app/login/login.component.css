@@ -1,0 +1,178 @@
+.card-icon{
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+
+.container {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 20px;
+}
+
+.naslov {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  color: #3A5F0B;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 20px 0;
+  display: block;
+}
+
+/*---------------------------------*/
+
+.tabelaFirmi{
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+}
+
+.tabelaDiv table tr:nth-child(even) {
+  background-color: #d4e6d1;
+}
+.pretraga{
+  margin-top:10px;
+  margin-bottom:10px;
+  display: flex;
+  justify-content: center;
+}
+
+.soriranje{
+  margin-top:10px;
+  margin-bottom:10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.soriranje select {
+  height: 30px;
+  width:250px;
+  padding: 2px;
+  font-size: 1rem;
+  border: 1px solid #4c704b;
+  border-radius: 5px;
+  background-color: #eef6ee;
+  color: #333;
+  margin-right: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soriranje select:focus {
+  border-color: #6b8f6a;
+  box-shadow: 0 0 5px rgba(75, 112, 75, 0.5);
+  outline: none;
+}
+
+.soriranje button {
+  padding: 8px 12px;
+  background-color: #4c704b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.soriranje button:hover {
+  background-color: #6b8f6a;
+}
+
+.soriranje .greska {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: block;
+}
+
+
+/*------------------------------------------Unos podataka  --------------------------------------*/
+.podaciContainer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  height: 50%;
+  width:100%;
+
+}
+
+/*---------Login------------*/
+.login {
+  background-color: rgba(245, 245, 245, 0.9);
+  padding: 5px;
+  border-radius: 8px;
+  width:30%;
+  max-height:300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.greska {
+  color: #FF5A5F;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+/*-------Registracija------------*/
+
+.registracija{
+  background-color: rgba(245, 245, 245, 0.9);
+
+  border-radius: 8px;
+  width:40%;
+  max-height:auto;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:10px;
+  padding:15px;
+}
+
+.podatak{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: left;
+  margin-bottom: 8px;
+  gap: 3px;
+}
+
+/*---------change password------------*/
+
+.changePassword{
+  background-color: rgba(245, 245, 245, 0.9);
+  padding: 5px;
+  border-radius: 8px;
+  width:30%;
+  max-height:300px;
+  margin: 0 auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+

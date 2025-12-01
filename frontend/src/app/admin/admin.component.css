@@ -1,0 +1,182 @@
+app-map {
+  display: block;
+  height: 300px; 
+  width: 300px;
+}
+
+
+.azurirajKorisnikaContainer{
+ display: flex;
+ flex-direction: row;
+}
+
+.tabelaAzurirajInfo{
+position: relative;
+}
+
+.tabelaAzuriraj{
+  position: relative;
+}
+
+.search{
+  position: relative;
+
+}
+
+.azurirajLevo{
+  display:flex;
+  flex-direction: column;
+}
+
+.greska {
+  color: #FF5A5F;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+/*----------------------------Dodaj firmu -----------------------------------*/
+.dodajFirmuContainer{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #E8F5E9, #C8E6C9);
+  width: 100%;
+  height: auto;
+}
+
+.dodajFirmu{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.firmaInfo{
+  background-color: rgba(245, 245, 245, 0.9);
+  padding: 5px;
+  border-radius: 8px;
+  width:40%;
+  height:auto;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mapaInfo{
+  height: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dodajFirmuDugme{
+  margin-top: 15px;
+  width:30%;
+  margin-left: 140px;
+  margin-bottom: 20px;
+}
+
+.dodajUsluguDugme{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.usluga{
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 2px solid #4CAF50;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:disabled {
+  background-color: #b0b0b0;
+  color: #7d7d7d;
+  cursor: not-allowed;
+}
+
+input[type="number"] {
+  padding: 3px;
+  font-size: 0.8rem;
+  border: 1px solid #4c704b;
+  border-radius: 5px;
+  background-color: #eef6ee;
+  color: #333;
+  margin-right: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  height: 25px;
+  width:250px;
+}
+
+/*----------------------------------dodavanje zaposlenog-----------------------------*/
+.registracija{
+  background-color: rgba(245, 245, 245, 0.9);
+
+  border-radius: 8px;
+  width:40%;
+  max-height:auto;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:10px;
+  padding:15px;
+}
+
+.podatak{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: left;
+  margin-bottom: 8px;
+  gap: 3px;
+}
+
+.radnikContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.dodajRadnikaUFirmu{
+  margin-left: 25px;
+}
+
+.dodajRadnikaUFirmu input[type=text]{
+  margin:4px;
+}
+/*-----------------------------------godisnji--------------------------*/
+.godisnjiOdmor{
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(245, 245, 245, 0.9);
+  padding: 5px;
+  border-radius: 8px;
+  width:25%;
+  max-height:300px;
+  margin-left: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  justify-content: center;
+  align-items: center
+}
+
+/*--------------------------------zaposleni--------------------------*/

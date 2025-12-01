@@ -1,0 +1,50 @@
+.naslov {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  color: #3A5F0B;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 20px 0;
+  display: block;
+}
+
+.login {
+  background-color: rgba(245, 245, 245, 0.9);
+  padding: 5px;
+  border-radius: 8px;
+  width:30%;
+  max-height:300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.login button{
+ margin-top:10px;
+}
+.greska {
+  color: #FF5A5F;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+
+.changePassword{
+  background-color: rgba(245, 245, 245, 0.9);
+  padding: 5px;
+  border-radius: 8px;
+  width:30%;
+  max-height:300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

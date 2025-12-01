@@ -1,0 +1,48 @@
+<h3 class="title">Lista firmi</h3>
+
+<div class="tabelaFirmi">
+
+  <div class="pretragaDiv">
+    <input type="text" placeholder="Pretraži restorane" [(ngModel)]="pretraga">
+    <button (click)="pretrazi()">Pretraži</button>
+    <button (click)="prikaziSve()">Prikazi sve </button>
+  </div>
+
+  <div class="tabelaDiv">
+    <table>
+      <tr>
+        <th>Naziv</th>
+        <th>Adresa</th>
+        <th>Dekorateri</th>
+      </tr>
+      <tr *ngFor="let f of prikazaneFirme">
+        <td><a (click)="posetiFirmu(f.idF)" routerLink="/firma">{{f.naziv}}</a></td>
+        <td>{{f.adresa}}</td>
+        <td>
+          <ul>
+            <li *ngFor="let dekorater of f.dekorateri">{{dekorater.ime}} {{dekorater.prezime}}</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+  <div class="sortiranje">
+    <select [(ngModel)]="sortOption">
+      <option value="nazivRastuce">Sortiraj po nazivu rastuće</option>
+      <option value="nazivOpadajuce">Sortiraj po nazivu opadajuće</option>
+
+      <option value="adresaRastuce">Sortiraj po adresi rastuće</option>
+      <option value="adresaOpadajuce">Sortiraj po adresi opadajuće</option>
+    </select>
+    <button (click)=" sortiraj()">Sortiraj</button>
+  </div>
+</div>
+
+<span class="greska">{{porukaGreske}}</span>
+
+
+
+
+

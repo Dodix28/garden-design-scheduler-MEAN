@@ -1,0 +1,18 @@
+<span class="naslov">MOJA BASTA - MOJA MASTA</span>
+<h5>Ulogujte se (administrator)</h5>
+
+<div class="login">
+  Korisnicko ime: <input type="text" name="username" [(ngModel)]="kor_ime">
+  Lozinka: <input type="password" name="password" [(ngModel)]="lozinka">
+  <button (click)="login()">Uloguj se</button>
+  <span class="greska">{{porukaLogin}}</span>
+</div>
+
+
+
+
+<div class="changePassword">
+  <h5>Zaboravili ste lozinku?</h5>
+  <button (click)="changePassword()">Promeni lozinku</button>
+</div>
+

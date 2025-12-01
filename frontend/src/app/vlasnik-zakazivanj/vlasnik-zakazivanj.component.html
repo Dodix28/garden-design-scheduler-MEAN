@@ -1,0 +1,19 @@
+<h3>Moja zakazivanja</h3>
+<table>
+  <tr>
+    <th>Datum zakazivanja</th>
+    <th>Datum izrade</th>
+    <th>Naziv firme</th>
+    <th>Usluge</th>
+  </tr>
+  <tr *ngFor="let z of mojaZakazivanja">
+    <td>{{z.datumZakazivanja}}</td>
+    <td>{{z.datumIzrade}}</td>
+    <td>{{z.nazivFirme}}</td>
+    <td>
+      <ul>
+        <li *ngFor="let u of z.usluge">{{u.naziv}}</li>
+      </ul>
+    </td>
+  </tr>
+</table>

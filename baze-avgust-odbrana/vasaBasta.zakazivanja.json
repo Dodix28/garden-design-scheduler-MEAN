@@ -1,0 +1,296 @@
+[{
+  "_id": {
+    "$oid": "66dd7e689ec442271b0c59a6"
+  },
+  "idZ": 1,
+  "datumZakazivanja": "2024-09-01",
+  "vreme": "17:05",
+  "kvadraturaBaste": "50",
+  "tipBaste": "privatna",
+  "kvBazen": 10,
+  "kvZelenilo": 10,
+  "kvNamestaj": 10,
+  "kvFontana": 0,
+  "brStolova": 0,
+  "brStolica": 0,
+  "kor_ime": "dodi",
+  "usluge": [
+    {
+      "naziv": "kopanje",
+      "cena": 300,
+      "selected": true
+    }
+  ],
+  "idF": 1,
+  "datumIzrade": "",
+  "status": "prihvaceno",
+  "dekorater": "ana",
+  "komentar": "",
+  "datumZavrsetka": "",
+  "opis": "",
+  "idRaspored": 0
+},
+{
+  "_id": {
+    "$oid": "66dd7e919ec442271b0c59a9"
+  },
+  "idZ": 2,
+  "datumZakazivanja": "2024-09-02",
+  "vreme": "17:05",
+  "kvadraturaBaste": "100",
+  "tipBaste": "restoran",
+  "kvBazen": 0,
+  "kvZelenilo": 20,
+  "kvNamestaj": 0,
+  "kvFontana": 20,
+  "brStolova": 0,
+  "brStolica": 2,
+  "kor_ime": "dodi",
+  "usluge": [
+    {
+      "naziv": "kopanje",
+      "cena": 300,
+      "selected": true
+    }
+  ],
+  "idF": 1,
+  "datumIzrade": "",
+  "status": "prihvaceno",
+  "dekorater": "ana",
+  "komentar": "",
+  "datumZavrsetka": "",
+  "opis": null,
+  "idRaspored": 0
+},
+{
+  "_id": {
+    "$oid": "66dd7eb29ec442271b0c59ac"
+  },
+  "idZ": 3,
+  "datumZakazivanja": "2024-10-03",
+  "vreme": "17:05",
+  "kvadraturaBaste": "100",
+  "tipBaste": "restoran",
+  "kvBazen": 0,
+  "kvZelenilo": 30,
+  "kvNamestaj": 0,
+  "kvFontana": 30,
+  "brStolova": 0,
+  "brStolica": 3,
+  "kor_ime": "dodi",
+  "usluge": [
+    {
+      "naziv": "kopanje",
+      "cena": 300,
+      "selected": true
+    },
+    {
+      "naziv": "sadjenje",
+      "cena": 200,
+      "selected": true
+    }
+  ],
+  "idF": 1,
+  "datumIzrade": "",
+  "status": "prihvaceno",
+  "dekorater": "ana",
+  "komentar": "",
+  "datumZavrsetka": "",
+  "opis": null,
+  "idRaspored": 6
+},
+{
+  "_id": {
+    "$oid": "66dd7ed19ec442271b0c59b3"
+  },
+  "idZ": 4,
+  "datumZakazivanja": "2024-10-04",
+  "vreme": "17:05",
+  "kvadraturaBaste": "140",
+  "tipBaste": "privatna",
+  "kvBazen": 40,
+  "kvZelenilo": 40,
+  "kvNamestaj": 10,
+  "kvFontana": 0,
+  "brStolova": 0,
+  "brStolica": 0,
+  "kor_ime": "dodi",
+  "usluge": [
+    {
+      "naziv": "kopanje",
+      "cena": 300,
+      "selected": true
+    },
+    {
+      "naziv": "sadjenje",
+      "cena": 200,
+      "selected": true
+    }
+  ],
+  "idF": 1,
+  "datumIzrade": "",
+  "status": "prihvaceno",
+  "dekorater": "ana",
+  "komentar": "",
+  "datumZavrsetka": "",
+  "opis": null,
+  "idRaspored": 0
+},
+{
+  "_id": {
+    "$oid": "66dd7f129ec442271b0c59b6"
+  },
+  "idZ": 5,
+  "datumZakazivanja": "2024-11-05",
+  "vreme": "17:05",
+  "kvadraturaBaste": "150",
+  "tipBaste": "restoran",
+  "kvBazen": 0,
+  "kvZelenilo": 50,
+  "kvNamestaj": 0,
+  "kvFontana": 50,
+  "brStolova": 0,
+  "brStolica": 5,
+  "kor_ime": "dodi",
+  "usluge": [
+    {
+      "naziv": "kopanje",
+      "cena": 300,
+      "selected": true
+    },
+    {
+      "naziv": "sadjenje",
+      "cena": 200,
+      "selected": true
+    }
+  ],
+  "idF": 1,
+  "datumIzrade": "",
+  "status": "prihvaceno",
+  "dekorater": "ana",
+  "komentar": "",
+  "datumZavrsetka": "",
+  "opis": null,
+  "idRaspored": 0
+},
+{
+  "_id": {
+    "$oid": "66dd8d916045861b00467864"
+  },
+  "idZ": 6,
+  "datumZakazivanja": "2024-09-01",
+  "vreme": "17:05",
+  "kvadraturaBaste": "30",
+  "tipBaste": "privatna",
+  "kvBazen": 10,
+  "kvZelenilo": 10,
+  "kvNamestaj": 10,
+  "kvFontana": 0,
+  "brStolova": 0,
+  "brStolica": 0,
+  "kor_ime": "dodi",
+  "usluge": [
+    {
+      "naziv": "sadjenje",
+      "cena": 200,
+      "selected": true
+    },
+    {
+      "naziv": "vadjenje",
+      "cena": 100,
+      "selected": true
+    }
+  ],
+  "idF": 1,
+  "datumIzrade": "",
+  "status": "prihvaceno",
+  "dekorater": "radnik3",
+  "komentar": "",
+  "datumZavrsetka": "",
+  "opis": "",
+  "idRaspored": 0
+},
+{
+  "_id": {
+    "$oid": "66dd8e0e6045861b00467876"
+  },
+  "idZ": 7,
+  "datumZakazivanja": "2024-09-21",
+  "vreme": "16:04",
+  "kvadraturaBaste": "20",
+  "tipBaste": "restoran",
+  "kvBazen": 0,
+  "kvZelenilo": 5,
+  "kvNamestaj": 0,
+  "kvFontana": 5,
+  "brStolova": 0,
+  "brStolica": 1,
+  "kor_ime": "dodi",
+  "usluge": [
+    {
+      "naziv": "kopanje",
+      "cena": 300,
+      "selected": true
+    },
+    {
+      "naziv": "sadjenje",
+      "cena": 200,
+      "selected": true
+    },
+    {
+      "naziv": "vadjenje",
+      "cena": 100,
+      "selected": true
+    }
+  ],
+  "idF": 1,
+  "datumIzrade": "",
+  "status": "prihvaceno",
+  "dekorater": "radnik3",
+  "komentar": "",
+  "datumZavrsetka": "",
+  "opis": "",
+  "idRaspored": 0
+},
+{
+  "_id": {
+    "$oid": "66dd8e226045861b00467879"
+  },
+  "idZ": 8,
+  "datumZakazivanja": "2024-09-28",
+  "vreme": "17:09",
+  "kvadraturaBaste": "30",
+  "tipBaste": "restoran",
+  "kvBazen": 0,
+  "kvZelenilo": 5,
+  "kvNamestaj": 0,
+  "kvFontana": 5,
+  "brStolova": 0,
+  "brStolica": 5,
+  "kor_ime": "dodi",
+  "usluge": [
+    {
+      "naziv": "kopanje",
+      "cena": 300,
+      "selected": true
+    },
+    {
+      "naziv": "sadjenje",
+      "cena": 200,
+      "selected": true
+    },
+    {
+      "naziv": "vadjenje",
+      "cena": 100,
+      "selected": false
+    }
+  ],
+  "idF": 1,
+  "datumIzrade": "",
+  "status": "prihvaceno",
+  "dekorater": "radnik1",
+  "komentar": "",
+  "datumZavrsetka": "",
+  "opis": null,
+  "idRaspored": 0
+}]

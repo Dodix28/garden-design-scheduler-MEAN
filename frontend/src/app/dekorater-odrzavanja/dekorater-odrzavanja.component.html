@@ -1,0 +1,32 @@
+<h5>Odrzavanja na cekanju</h5>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>status</th>
+    <th>firma</th>
+    <th>Tip baste</th>
+    <th>Kvadratura</th>
+    <th>prihvati</th>
+    <th>odbij</th>
+  </tr>
+  <tr *ngFor="let o of naCekanju">
+    <td>{{o.idO}}</td>
+    <td>{{o.status}}</td>
+    <td>{{mojaFirma.naziv}}</td>
+
+    <td>{{o.tipBaste}}</td>
+    <td *ngIf="o.tipBaste === 'privatna' ">Bazen:{{o.kvBazen}} m2</td>
+    <td *ngIf="o.tipBaste === 'restoran' ">Fontana:{{o.kvFontana}}m2</td>
+
+    <td><button (click)="prihvati(o.idO)">Prihvati</button></td>
+    <td><button (click)="odbij(o.idO)">Odbij</button></td>
+  </tr>
+</table>
+
+<h5 *ngIf="prikaziFormuVreme ===true ">Unesite procenjeno vreme zavrsetka radova za prihvaceno odrzavanje </h5>
+<div class="datumVreme" *ngIf="prikaziFormuVreme ===true ">
+  Datum zavrsetka: <input type="date" name="datumZavrsetka" [(ngModel)]="datum">
+  Vreme zavrsetka: <input type="time" name="vremeZavrsetka" [(ngModel)]="vreme">
+  <button (click)="prosledi()">Prosledi</button>
+</div>
+<span class="greska" style="text-align: center;">{{porukaDV}}</span>

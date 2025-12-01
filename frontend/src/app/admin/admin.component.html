@@ -1,0 +1,343 @@
+
+
+
+<button (click)="odjaviSe()">Odjavi se</button>
+
+    <h5 style="text-align: left;">Lista zahteva vlasnika:</h5>
+    <table>
+      <tr>
+        <th>Ime</th>
+        <th>Prezime&nbsp;&nbsp;</th>
+        <th>Kor_ime&nbsp;&nbsp;</th>
+        <th>Tip</th>
+        <th>Mejl&nbsp;</th>
+        <th>Pol &nbsp;&nbsp;</th>
+        <th>Adresa&nbsp;</th>
+        <th>Kontakt</th>
+        <th>Profilna</th>
+        <th>Kartica</th>
+        <th>Status</th>
+        <th>Prihvati</th>
+        <th>Odbij</th>
+      </tr>
+      <tr *ngFor="let z of zahtevi">
+        <td>{{z.ime}}</td>
+        <td>{{z.prezime}}</td>
+        <td>{{z.kor_ime}}</td>
+        <td>{{z.tip}}</td>
+        <td>{{z.mejl}}</td>
+        <td>{{z.pol}}</td>
+        <td>{{z.adresa}}</td>
+        <td>{{z.kontakt}}</td>
+        <td>
+          <div>
+            <img [src]=" 'http://localhost:4000/uploads/'+ z.profilna " height="80px" width="80px" alt="Opis slike">
+          </div>
+        </td>
+        <td>{{z.brKartice}}</td>
+        <td>{{z.status}}</td>
+        <td><button (click)="prihvati(z)">Prihvati</button></td>
+        <td><button (click)="odbij(z)">Odbij</button></td>
+      </tr>
+    </table>
+
+    <hr/>
+
+    <h5 style="text-align: left;">Svi Dekorateri</h5>
+      <table>
+        <tr>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Korisnicko ime</th>
+          <th>Mejl</th>
+          <th>Pol</th>
+          <th>Kontakt</th>
+          <th>Adresa</th>
+          <th>Slika</th>
+        </tr>
+        <tr *ngFor="let k of sviDekorateri">
+          <td>{{k.ime}}</td>
+          <td>{{k.prezime}}</td>
+          <td>{{k.kor_ime}}</td>
+          <td>{{k.mejl}}</td>
+          <td>{{k.pol}}</td>
+          <td>{{k.kontakt}}</td>
+          <td>{{k.adresa}}</td>
+          <td><img [src]=" 'http://localhost:4000/uploads/' + k.profilna" height="80px" width="80px" alt="Profilna"></td>
+        </tr>
+      </table>
+
+      <h5 style="text-align: left;">Svi Vlasnici</h5>
+
+      <table>
+        <tr>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Korisnicko ime</th>
+          <th>Mejl</th>
+          <th>Pol</th>
+          <th>Kontakt</th>
+          <th>Adresa</th>
+          <th>Slika</th>
+        </tr>
+        <tr *ngFor="let g of sviVlasnici">
+          <td>{{g.ime}}</td>
+          <td>{{g.prezime}}</td>
+          <td>{{g.kor_ime}}</td>
+          <td>{{g.mejl}}</td>
+          <td>{{g.pol}}</td>
+          <td>{{g.kontakt}}</td>
+          <td>{{g.adresa}}</td>
+          <td><img [src]=" 'http://localhost:4000/uploads/' +g.profilna" height="100px" width="100px" alt="Profilna"></td>
+        </tr>
+      </table>
+
+
+      <h5 style="text-align: left;">Sve firme</h5>
+
+      <table>
+        <tr>
+          <th>Naziv</th>
+          <th>Adresa</th>
+          <th>Godisnji odmor</th>
+          <th>Usluge</th>
+          <th>Kontakt</th>
+          <th>dekorateri</th>
+        </tr>
+        <tr *ngFor="let g of sveFirme">
+          <td>{{g.naziv}}</td>
+          <td>{{g.adresa}}</td>
+          <td>
+            Pocetak: {{g.godisnji_odmor.pocetak}}<br/>
+            Kraj: {{g.godisnji_odmor.kraj}}<br/>
+          </td>
+          <td>
+            <ul>
+              <li *ngFor="let u of g.usluge">{{u.naziv}}: {{u.cena}}</li>
+            </ul>
+          </td>
+          <td>{{g.kontakt}}</td>
+          <td>
+            <ul>
+              <li *ngFor="let dekorater of g.dekorateri">{{dekorater.ime}} {{dekorater.prezime}}</li>
+            </ul>
+          </td>
+
+        </tr>
+      </table>
+
+
+      <h5 style="text-align: left;">Azuriraj informacije korisnika </h5>
+
+      <div class="azurirajKorisnikaContainer">
+        <div class="azurirajLevo">
+          <div class="search">
+            Username: <input type="text" name="kor_ime" [(ngModel)]="kor_ime" placeholder="Unesi korisnicko ime korisnika ">
+           <button (click)="findUser()">Prosledi</button>
+           <span class="greska">{{poruka1}}</span>
+          </div>
+
+          <div class="tabelaAzurirajInfo">
+            <table *ngIf="prikaziTabelu === true">
+              <tr>
+                <th>IME</th>
+                <td>{{korisnikAzuriranje.ime}}</td>
+              </tr>
+              <tr>
+                <th>Prezime</th>
+                <td>{{korisnikAzuriranje.prezime}}</td>
+              </tr>
+              <tr>
+                <th>Tip</th>
+                <td>{{korisnikAzuriranje.tip}}</td>
+              </tr>
+
+              <tr>
+                <th>Mejl</th>
+                <td>{{korisnikAzuriranje.mejl}}</td>
+              </tr>
+              <tr>
+                <th>Pol</th>
+                <td>{{korisnikAzuriranje.pol}}</td>
+              </tr>
+              <tr>
+                <th>Adresa</th>
+                <td>{{korisnikAzuriranje.adresa}}</td>
+              </tr>
+              <tr>
+                <th>Kontakt</th>
+                <td>{{korisnikAzuriranje.kontakt}}</td>
+              </tr>
+              <tr>
+                <th>Profilna</th>
+                <td>
+                  <img [src]=" 'http://localhost:4000/uploads/' +korisnikAzuriranje.profilna" height="100px" width="100px" alt="Profilna">
+                </td>
+              </tr>
+              <tr>
+                <th></th>
+                <td><button (click)="toggleAzuriranjePodataka()" *ngIf="prikaziFormuZaAzuriranje === false">Azuriraj Podatke</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="tabelaAzuriraj">
+          <table *ngIf="prikaziFormuZaAzuriranje === true">
+            <tr>
+              <th>IME</th>
+              <td><input type="text" name="ime" placeholder="ime" [(ngModel)]="ime"></td>
+            </tr>
+            <tr>
+              <th>Prezime</th>
+              <td><input type="text" name="prezime" placeholder="prezime" [(ngModel)]="prezime"></td>
+            </tr>
+            <tr>
+              <th>TIP</th>
+              <td>
+                <select [(ngModel)]="tip" name="tip">
+                  <option value="vlasnik"> Vlasnik </option>
+                  <option value="dekorater"> Dekorater </option>
+                </select><br/>
+              </td>
+            </tr>
+            <tr>
+              <th>Mejl</th>
+              <td><input type="text" name="mejl" placeholder="mejl" [(ngModel)]="mejl"></td>
+            </tr>
+            <tr>
+              <th>Pol</th>
+              <td>
+                <select [(ngModel)]="pol" name="pol">
+                  <option value="M"> M </option>
+                  <option value="Z"> Z </option>
+                </select><br/>
+              </td>
+            </tr>
+            <tr>
+              <th>Adresa</th>
+              <td><input type="text" name="adresa" placeholder="adresa" [(ngModel)]="adresa"></td>
+            </tr>
+            <tr>
+              <th>Kontakt</th>
+              <td><input type="text" name="kontakt" placeholder="kontakt" [(ngModel)]="kontakt"></td>
+            </tr>
+            <tr>
+              <th>Profilna</th>
+              <td>
+                <input type="file" id="image" (change)="selectFile($event)" name="image"  accept=".png, .jpg">
+              </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>
+                <button (click)="azuriraj()">Azuriraj</button>
+              </td>
+            </tr>
+          </table>
+          <span class="greska">{{poruka}}</span>
+          <span class="greska">{{porukaKontakt}}</span>
+          <span class="greska">{{porukaMejl}}</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="dodajFirmuContainer" >
+        <h5 style="text-align: left;">Dodaj novu firmu</h5>
+
+        <div class="dodajFirmu">
+          <div class="firmaInfo">
+            Naziv: <input type="text" name="naziv" [(ngModel)]="nazivFirme"> <br/>
+            Adresa: <input type="text" name="adresa" [(ngModel)]="adresaFirme"> <br/>
+            Kontakt: <input type="text" name="kontakt" [(ngModel)]="kontaktFirme"> <br/>
+
+            <h3 class="title">Usluge</h3>
+            <div *ngFor="let usluga of usluge; let i = index" class="usluga">
+                <label style="text-align: center;">Usluga {{i + 1}}</label><br/>
+                 Naziv: <input type="text" [(ngModel)]="usluga.naziv"><br/>
+                Cena: <input type="number" [(ngModel)]="usluga.cena">
+            </div>
+             <button (click)="dodajUslugu()"  [disabled]="!areAllServicesValid()" class="dodajUsluguDugme">Dodaj novu uslugu</button><br/>
+              <span class="greska"> {{porukaU}}</span>
+          </div>
+
+          <div class="mapaInfo">
+            <h3 class="title"> Odaberi lokaciju na mapi</h3>
+            <div style="width: 300px; height: 300px; border:1px solid black;">
+               <app-map></app-map>
+             </div>
+            <span class="greska">{{porukaLokacije}}</span>
+          </div>
+        </div>
+
+        <button (click)="dodajFirmu()" class="dodajFirmuDugme">Dodaj firmu</button>
+        <span class="greska">{{porukaF}}</span>
+        <span class="greska">{{porukaKontaktF}}</span>
+      </div>
+
+
+
+      <h5 style="text-align: left;">Dodaj godisnji odmor firme</h5>
+
+      <div class="godisnjiOdmor">
+        <input type="text" name="firmaGodisnji" placeholder="Unesi naziv firme" [(ngModel)]="firmaGodisnji"> <br/>
+        Pocetak:<input type="date" name="pocetak" placeholder="pocetak" [(ngModel)]="pocetakGodisnji"> <br/>
+        Kraj:<input type="date" name="kraj" placeholder="kraj" [(ngModel)]="krajGodisnji"><br/>
+        <button (click)="dodajGodisnji()">Dodaj</button>
+        <span class="greska">{{porukaG}}</span>
+      </div>
+
+
+
+<h5 style="text-align: left;">Dodaj korisnika u sistem, i dodeli mu firmu u kojoj radi</h5>
+<div class="radnikContainer">
+
+  <div class="registracija">
+    <h5 style="text-align: left;">Dodaj zaposlenog u sistem</h5>
+    <div class="podatak"> Korisnicko ime: <input type="text" name="kor_ime_reg" [(ngModel)]="kor_ime_reg"></div>
+    <div class="podatak">Lozinka: <input type="password" name="lozinka_reg" [(ngModel)]="lozinka_reg"></div>
+    <div class="podatak">Ime: <input type="text" name="ime_reg" [(ngModel)]="ime_reg"></div>
+    <div class="podatak">Prezime: <input type="text" name="prezime_reg" [(ngModel)]="prezime_reg"></div>
+    <div class="podatak">Pol:
+      <select [(ngModel)]="pol_reg" name="pol_reg">
+        <option value="M"> M </option>
+        <option value="Z"> Z </option>
+      </select></div>
+    <div class="podatak">Adresa: <input type="text" name="adresa_reg" [(ngModel)]="adresa_reg"></div>
+    <div class="podatak">Kontakt telefon: <input type="text" name="kontakt_reg" [(ngModel)]="kontakt_reg"></div>
+    <div class="podatak">Email: <input type="text" name="mejl_reg" placeholder="nesto@primer.com" [(ngModel)]="mejl_reg"></div>
+    <div class="podatak">Profinla fotografija: <input type="file" id="image" (change)="selectFileZaposleni($event)" name="image"  accept=".png, .jpg"></div>
+    <button (click)="dodajZaposlenog()">Registruj radnika</button><br/>
+    <span class="greska">{{porukaReg}}</span>
+    <span class="greska">{{porukaLozinkaZ}}</span>
+    <span class="greska">{{porukaMejlZ}}</span>
+    <span class="greska">{{porukaKontaktZ}}</span>
+</div>
+
+
+
+
+    <div class="dodajRadnikaUFirmu">
+        <h5>Dodaj radnika u firmu</h5>
+        Radnik: <br/>
+        <input type="text" name="imeRadnika" placeholder="ime" [(ngModel)]="imeRadnika"> <br/>
+        <input type="text" name="prezimeRadnika" placeholder="prezime" [(ngModel)]="prezimeRadnika"><br/>
+        <input type="text" name="nazivFirme" placeholder="naziv firme" [(ngModel)]="firmaZaRadnika"> <br/>
+        <button (click)="dodajRadnika()">Dodaj radnika</button> <br/><br/><br/>
+        <span class="greska">{{porukaR}}</span>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

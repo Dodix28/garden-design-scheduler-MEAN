@@ -1,0 +1,269 @@
+
+.greska {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: block;
+}
+
+html{ height: 100%; }
+
+
+
+body {
+  background: linear-gradient(to bottom, #d4e6d1, #ffffff); 
+  color: #3e4e50;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.title{
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 2px solid #4CAF50;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*------------------------------------- TABELA -------------------------------*/
+table{
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,td {
+  text-align: left;
+   border: 1px solid #ddd;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+}
+
+th{
+  background-color: #4c704b;
+  color: white;
+}
+td {
+  background-color: #ffffff;
+}
+table tr:nth-child(even) {
+  background-color: #d4e6d1;
+}
+
+/*-----------------------------------INPUTI-----------------------------------*/
+input[type="file"] {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-family: 'Arial', sans-serif; 
+  color: #fff;
+  background-color: #6d8a4f;
+  border: 1px solid #5a7a44;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #6d8a4f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif; 
+}
+
+input[type="file"]:hover {
+  background-color: #5a7a44;
+}
+
+
+
+
+
+input[type="text"] {
+  padding: 3px;
+  font-size: 0.8rem;
+  border: 1px solid #4c704b;
+  border-radius: 5px;
+  background-color: #eef6ee;
+  color: #333;
+  margin-right: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  height: 25px;
+  width:250px;
+}
+input[type="password"] {
+  padding: 3px;
+  font-size: 1rem;
+  border: 1px solid #4c704b;
+  border-radius: 5px;
+  background-color: #eef6ee;
+  color: #333;
+  margin-right: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  height: 30px;
+  width:250px;
+}
+
+input[type="text"]:focus {
+  border-color: #6b8f6a;
+  box-shadow: 0 0 5px rgba(75, 112, 75, 0.5);
+  outline: none;
+}
+select {
+  height: 28px;
+  width:250px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #4c704b;
+  border-radius: 5px;
+  background-color: #eef6ee;
+  color: #333;
+  margin-right: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+select:focus {
+  border-color: #6b8f6a;
+  box-shadow: 0 0 5px rgba(75, 112, 75, 0.5);
+  outline: none;
+}
+
+/*TAMNIJE DUGME*/
+.tamnije{
+  padding: 8px 12px;
+  background-color: #4c704b; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.tamnije :hover{
+  background-color: #6b8f6a;
+}
+
+input[type="date"] {
+  padding: 3px;
+  font-size: 0.8rem;
+  border: 1px solid #4c704b;
+  border-radius: 5px;
+  background-color: #eef6ee;
+  color: #333;
+  margin-right: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  height: 25px;
+  width: 250px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="date"]::-webkit-input-placeholder {
+  color: #7d7d7d;
+}
+
+input[type="date"]::-moz-placeholder {
+  color: #7d7d7d;
+}
+
+input[type="date"]:-ms-input-placeholder {
+  color: #7d7d7d;
+}
+
+/*----------------------------------- BUTTON ---------------------------------*/
+button {
+  background-color: #86a873; 
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #77a855; 
+}
+
+button:active {
+  background-color: #66a343; 
+}
+
+
+
+/*---------------------------------------- NASLOVI-----------------------------------*/
+h5 {
+  color: #4c704b;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: #d4e6d1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.leaflet-default-icon {
+  background-image: url('/assets/marker-icon.png');
+  background-size: contain;
+}
+
+.leaflet-div-icon {
+  background-image: url('/assets/marker-icon.png');
+  background-size: contain;
+}
+
+.leaflet-marker-icon {
+  background-image: url('/assets/marker-icon.png');
+  background-size: contain;
+}
+
+.leaflet-marker-shadow {
+  background-image: url('/assets/marker-shadow.png');
+  background-size: contain;
+}
