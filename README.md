@@ -1,6 +1,6 @@
-\# Online Service Booking and Salon Management
+\# Garden Interior Design
 
-\*Your all-in-one salon booking and management solution.\*
+\*Schedule services and visualize custom garden layouts with ease.\*
 
 
 
